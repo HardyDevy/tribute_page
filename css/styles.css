@@ -7,7 +7,7 @@ html {
 	font-size: 62.5%;
 }
 img {
-	width: 100%;
+	width: 05%;
 	height: auto;
 }
 body {
@@ -21,7 +21,7 @@ p {
 }
 
 nav, footer {
-  background-color: rgb(218, 41, 28);
+  background-color: rgb(30, 28, 28);
   -moz-box-shadow: 0px 4px 10px #777777;
   -webkit-box-shadow: 0px 4px 10px #777777;
   box-shadow: 0px 4px 10px #777777;
@@ -34,7 +34,7 @@ footer {
 /*-- Main Menu Styles--*/
 nav ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style: none;
   padding: 1em;
   margin: 0 auto;
