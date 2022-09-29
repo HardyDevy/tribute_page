@@ -14,7 +14,7 @@ body {
   color: #444;
   background-color: rgb(17, 17, 17);
   font-size: 1.6rem;
-  font-family: 'Gentium Book Basic', serif;
+  font-family: 'Montserrat', sans-serif !important;
 }
 p {
   margin-bottom: .67em;
@@ -116,6 +116,7 @@ section.even {
 }
 
 .body-images{
+  display:block;
   width: 50%;
 }
 /*-- Article Styles--*/
@@ -142,10 +143,10 @@ article figcaption {
   width: 96%;
 }
 a.button {
-  border: 2px solid #d02929;
+  border: 2px solid #c2c2c2;
   padding: .4em 1em .4em 1em;
   text-decoration: none;
-  color: #2a1d1d;
+  color: #c2c2c2;
   border-radius: 300px;
   border-width: 4px;
   font-family: 'Lato', sans-serif;
@@ -153,9 +154,9 @@ a.button {
   font-size: 80%;
 }
 a.button:hover, a.button:active {
-  border: 4px solid #03110b;
+  border: 4px solid #939393;
   text-decoration: none;
-  color: #03110b;
+  color: #939393;
 }
 /*-- changes header and article width on small screens --*/
 @media screen and (max-width: 768px) {
