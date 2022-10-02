@@ -9,10 +9,11 @@ html {
 img {
 	width: 100%;
 	height: auto;
+  display: flex;
 }
 body {
   color: #444;
-  background-color: rgb(213, 213, 213);
+  background-color: rgb(16, 16, 16);
   font-size: 1.6rem;
   font-family: 'Montserrat', sans-serif !important;
 }
@@ -85,8 +86,8 @@ header h1 {
 .quotecontainer {
   margin: 0em;
   /* padding: .5rem; */
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
   display: grid;
   grid-gap: .5rem;
 
@@ -95,48 +96,56 @@ header h1 {
 }
 .quote {
   width: 1fr;
-  padding: .75em;
+  /* padding: .75em; */
   margin-left: 1em;
   margin-right: 1em;
-  background-color: rgba(31, 31, 31, 0.95);
-  border-radius: 1em;
+  /* background-color: rgba(57, 57, 57, 0.95); */
+  /* border-radius: 1em; */
   text-align: center;
   line-height: 2em;
-  color: #c2c2c2;
-  border: 3px solid rgb(207, 12, 12);
+  color: #bfbebe;
+  /* border: 3px solid rgb(207, 12, 12); */
 }
 
 /*-- Body Styles --*/
 section {
   display: grid;
-  grid-gap: 3.2rem;
-  margin: 3rem auto;
+  grid-gap: .5rem;
+  grid-template-columns: repeat(2, 2fr,1fr);
 }
 section.odd {
-  grid-template-columns: 1fr;
+  text-align:center;
+  align-items: center;
+  background-color: #e5e5e5;
+  /* grid-template-columns: 1fr; */
 }
 section.even {
-  grid-template-columns: 1fr;
+  text-align:left;
+  align-items: center;
+  background-color: #d6d6d6;
+  /* grid-template-columns: 1fr; */
 }
 
-.glass-outer {
-  order: 1;
+.body-outer {
+  /* order: 1; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.glass-inner {
+.body-inner {
   max-width: 100%;
   padding: 4rem 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items:flex-start;
 }
 
 .body-images{
-  display:block;
-  width: 50%;
+  height: 256px;
+  width: auto;
+  margin: 1em auto;
+  
 }
 /*-- Article Styles--*/
 article {
