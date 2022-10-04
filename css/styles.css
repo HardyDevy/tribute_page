@@ -20,8 +20,16 @@ body {
 p {
   margin-bottom: .67em;
 }
+.sectiontext{
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
 .logo{
-width: 9%;
+  width: 9%;
+}
+
+li {
+  margin: .5em auto;
 }
 
 nav, footer {
@@ -96,7 +104,8 @@ header h1 {
 }
 .quote {
   width: 1fr;
-  /* padding: .75em; */
+  /* padding-left: .75em; */
+  /* padding-right: .75em; */
   margin-left: 1em;
   margin-right: 1em;
   /* background-color: rgba(57, 57, 57, 0.95); */
@@ -111,16 +120,16 @@ header h1 {
 section {
   display: grid;
   grid-gap: .5rem;
-  grid-template-columns: repeat(2, 2fr,1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 section.odd {
-  text-align:center;
+  text-align: left;
   align-items: center;
   background-color: #e5e5e5;
   /* grid-template-columns: 1fr; */
 }
 section.even {
-  text-align:left;
+  text-align: left;
   align-items: center;
   background-color: #d6d6d6;
   /* grid-template-columns: 1fr; */
@@ -142,9 +151,9 @@ section.even {
 }
 
 .body-images{
-  height: 256px;
-  width: auto;
-  margin: 1em auto;
+  height: auto;
+  width: 720px;
+  margin: 2em 2em;
   
 }
 /*-- Article Styles--*/
