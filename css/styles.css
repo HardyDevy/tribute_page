@@ -28,6 +28,10 @@ li {
   margin: .5em auto;
 }
 
+ul {
+  margin-bottom: 0;
+}
+
 nav, footer {
   /* background-color: rgb(16, 16, 16);
   -moz-box-shadow: 0px 4px 10px #777777;
@@ -105,21 +109,20 @@ header h1 {
 }
 .quote {
   width: 1fr;
-  /* padding-left: .75em; */
-  /* padding-right: .75em; */
   margin-left: 1em;
   margin-right: 1em;
-  /* background-color: rgba(57, 57, 57, 0.95); */
-  /* border-radius: 1em; */
   text-align: center;
-  line-height: 2em;
+  line-height: 1.9em;
   font-weight: bold;
+  font-size: 17px;
   color: #b1b1b1;
-  /* border: 3px solid rgb(207, 12, 12); */
 }
 
 header h3 {
   width: 50%;
+}
+.title {
+  color: #d02929;
 }
 
 /*-- Body Styles --*/
@@ -157,10 +160,22 @@ section.even {
   width: 90%;
 }
 
+.morebutton {
+  cursor: pointer;
+  color: white;
+  background-color: #d02929;
+  border: none;
+  border-radius: 10rem;
+  margin-top: 2rem;
+  padding: .75rem .75rem .75rem .75rem;
+  font-size: 90%;
+}
+
 .body-images{
   height: auto;
   width: 90%;
   margin: 2em 2em;
+  border-radius: 1rem;
   /* border: 10px solid #d6d6d6; */
 
 }
@@ -175,7 +190,8 @@ article {
 
 .pagination {
   display: flex;
-  margin: 2em auto;
+  margin-bottom: .5em;
+  margin-top: 1em;
   justify-content: space-between;
   width: 96%;
 }
@@ -199,4 +215,9 @@ a.button:hover, a.button:active {
 @media screen and (max-width: 768px) {
   header {width: 96%;}
   article {width: 96%;}
+
+}
+
+@media screen and (max-width: 550px) {
+  body {width: 98vw;}
 }
