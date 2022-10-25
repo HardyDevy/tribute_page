@@ -5,7 +5,8 @@ html {
 img {
 	width: 100%;
 	height: auto;
-  /* display: flex; */
+  display: flex;
+  align-items: center;
 }
 body {
   color: #444;
